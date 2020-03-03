@@ -27,9 +27,19 @@ namespace Anagram.Tests
     public void GatherMultipleWords_ReturnsMultipleWordsInArray_StringArray()
     {
       Words actual = new Words();
-      string testWords = "bread beard";
+      string testWords = "beard bread";
       actual.ConvertToArray(testWords);
-      string[] expected = new string[] { "bread", "beard" };
+      string[] expected = new string[] { "beard", "bread" };
+      CollectionAssert.AreEqual(expected, actual.wordsArr);
+    }
+
+    [TestInitialize] // Runs Before Each Test
+    public void SortMultipleWords_ReturnsSortedWordsInArray_StringArray()
+    {
+      Words actual = new Words();
+      string testWords = "bread bun beard";
+      actual.ConvertToArray(testWords);
+      string[] expected = new string[] { "beard", "bread", "bun" };
       CollectionAssert.AreEqual(expected, actual.wordsArr);
     }
 
