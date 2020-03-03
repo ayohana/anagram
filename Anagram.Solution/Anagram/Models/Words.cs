@@ -4,9 +4,21 @@ namespace Anagram.Models
   {
     public string[] wordsArr { get; set; }
 
-    public void SplitWords(string input)
+    public void ConvertToArray(string input)
     {
-      wordsArr = input.Split(" ");
+      if (CheckForSpaces(input))
+      {
+        wordsArr = input.Split(" ");
+      }
+      else
+      {
+        wordsArr = new string[] { input };
+      }
+    }
+
+    public bool CheckForSpaces(string input)
+    {
+      return input.Contains(" ");
     }
     
   }
