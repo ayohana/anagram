@@ -29,11 +29,10 @@
 * Open the `Command Line Interface`.
   * Navigate into the `Anagram` directory.
     * Type in the command `dotnet restore` to gather tools and dependencies for the application.
+    * Type in the command `dotnet run` to run the application.
   * Navigate into the `Anagram.Tests` directory.
     * Type in the command `dotnet restore` to gather tools and dependencies for the tests.
-  * Navigate into the `Anagram.Solution` directory.
-    * Type in the command `dotnet run` to run the application.
-    * Type in the command `dotnet test` to run the tests.
+    * Type in the command `dotnet test` to run the tests. 
 
 ## Known Bugs
 
