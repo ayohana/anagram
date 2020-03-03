@@ -1,24 +1,12 @@
-using System.Collections.Generic;
-
 namespace Anagram.Models
 {
   public class Words
   {
-    public List<string> ListOfWords { get; set; }
+    public string[] wordsArr { get; set; }
 
-    public Words()
+    public void SplitWords(string input)
     {
-      ListOfWords = new List<string> ();
-    }
-
-    public void AddWord(string inputWord)
-    {
-      ListOfWords.Add(inputWord);
-    }
-
-    public void SplitWords(string inputWord)
-    {
-
+      wordsArr = input.Split(" ");
     }
     
   }
