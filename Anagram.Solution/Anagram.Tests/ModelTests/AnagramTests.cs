@@ -1,5 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 using Anagram.Models;
 
 namespace Anagram.Tests
@@ -11,31 +10,28 @@ namespace Anagram.Tests
     [TestMethod]
     public void WordsConstructor_CreatesInstanceOfWords_Words()
     { 
-      Words testWords = new Words();
-      Assert.AreEqual(typeof(Words), testWords.GetType());
+      Words actual = new Words();
+      Assert.AreEqual(typeof(Words), actual.GetType());
     }
 
     [TestMethod]
-    public void GetFirstWord_ReturnsFirstWord_String()
+    public void GatherSingleWord_ReturnsSingleWordInArray_StringArray()
     {
-      string firstTestWord = "bread"; 
-      Words testWords = new Words();
-      testWords.AddWord(firstTestWord);
-
-      Assert.AreEqual(firstTestWord, testWords.ListOfWords[0]);
+      Words actual = new Words();
+      string expected = "bread";
+      actual.ConvertToArray(expected);
+      Assert.AreEqual(expected, actual.wordsArr[0]);
     }
 
     [TestMethod]
-    public void GetListOfWords_ReturnsListOfWords_ListOfStrings()
+    public void GatherMultipleWords_ReturnsMultipleWordsInArray_StringArray()
     {
-      string testMultipleWords = "bread beard";
-      Words testWords = new Words();
-      testWords.SplitWords(testMultipleWords);
-
-      List<string> expected = new List<string> { "bread", "beard" };
-      List<string> testResult = testWords.ListOfWords;
-
-      CollectionAssert.AreEqual(expected, testResult);
+      Words actual = new Words();
+      string testWords = "bread beard";
+      actual.ConvertToArray(testWords);
+      string[] expected = new string[] { "bread", "beard" };
+      CollectionAssert.AreEqual(expected, actual.wordsArr);
     }
+
   }
 }
