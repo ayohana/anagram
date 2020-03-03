@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using Anagram.Models;
 
 namespace Anagram.Tests
@@ -22,6 +23,19 @@ namespace Anagram.Tests
       testWords.AddWord(firstTestWord);
 
       Assert.AreEqual(firstTestWord, testWords.ListOfWords[0]);
+    }
+
+    [TestMethod]
+    public void GetListOfWords_ReturnsListOfWords_ListOfStrings()
+    {
+      string testMultipleWords = "bread beard";
+      Words testWords = new Words();
+      testWords.SplitWords(testMultipleWords);
+
+      List<string> expected = new List<string> { "bread", "beard" };
+      List<string> testResult = testWords.ListOfWords;
+
+      CollectionAssert.AreEqual(expected, testResult);
     }
   }
 }

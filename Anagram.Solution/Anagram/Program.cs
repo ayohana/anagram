@@ -8,11 +8,12 @@ namespace Anagram
   {
     public static void Main()
     {
+      
       Words words = new Words();
       Console.WriteLine("Enter words you want to check for Anagrams:");
       string input = Console.ReadLine();
       words.AddWord(input);
-      Console.WriteLine(words.ListOfWords[0]);
+
     }
   }
 }

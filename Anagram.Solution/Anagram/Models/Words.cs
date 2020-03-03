@@ -15,6 +15,11 @@ namespace Anagram.Models
     {
       ListOfWords.Add(inputWord);
     }
+
+    public void SplitWords(string inputWord)
+    {
+
+    }
     
   }
 }
