@@ -1,0 +1,11 @@
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\bin\Debug\netcoreapp2.2\Anagram.deps.json
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\bin\Debug\netcoreapp2.2\Anagram.dll
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\bin\Debug\netcoreapp2.2\Anagram.pdb
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\obj\Debug\netcoreapp2.2\Anagram.csprojAssemblyReference.cache
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\obj\Debug\netcoreapp2.2\Anagram.csproj.CoreCompileInputs.cache
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\obj\Debug\netcoreapp2.2\Anagram.AssemblyInfoInputs.cache
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\obj\Debug\netcoreapp2.2\Anagram.AssemblyInfo.cs
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\obj\Debug\netcoreapp2.2\Anagram.dll
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\obj\Debug\netcoreapp2.2\Anagram.pdb
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\bin\Debug\netcoreapp2.2\Anagram.runtimeconfig.json
+C:\Users\Adela\Desktop\anagram\Anagram.Solution\Anagram\bin\Debug\netcoreapp2.2\Anagram.runtimeconfig.dev.json

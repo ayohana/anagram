@@ -1,8 +1,20 @@
+using System.Collections.Generic;
+
 namespace Anagram.Models
 {
   public class Words
   {
-    // properties, constructors, methods, etc. go here
+    public List<string> ListOfWords { get; set; }
+
+    public Words()
+    {
+      ListOfWords = new List<string> ();
+    }
+
+    public void AddWord(string inputWord)
+    {
+      ListOfWords.Add(inputWord);
+    }
     
   }
 }
