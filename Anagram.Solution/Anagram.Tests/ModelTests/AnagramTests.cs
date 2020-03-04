@@ -3,11 +3,11 @@ using Anagram.Models;
 
 namespace Anagram.Tests
 {
-  [TestClass]
+  [TestClass] // A Class Containing MSTest Unit Tests
   public class WordsTests
   {
 
-    [TestMethod]
+    [TestMethod] // A Unit Test
     public void WordsConstructor_CreatesInstanceOfWords_Words()
     { 
       Words actual = new Words();
@@ -33,7 +33,7 @@ namespace Anagram.Tests
       CollectionAssert.AreEqual(expected, actual.wordsArr);
     }
 
-    [TestInitialize] // Runs Before Each Test
+    [TestInitialize] // Runs Before Each Test (Optional)
     public void SortMultipleWords_ReturnsSortedWordsInArray_StringArray()
     {
       Words actual = new Words();
