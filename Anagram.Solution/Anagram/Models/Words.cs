@@ -10,7 +10,12 @@ namespace Anagram.Models
     {
       if (CheckForSpaces(input))
       {
-        wordsArr = input.Split(" ");
+        char[] splitters = new char[] { '\r', '\n', ' ', ',', '.', '/' };
+        // \r is a line break in Windows
+        // \n is a line break in Mac
+        // add more special characters here 
+        wordsArr = input.Split(splitters, StringSplitOptions.RemoveEmptyEntries);
+        // RemoveEmptyEntries is used to avoid empty results. Sometimes Split() can return an array with empty strings in it—this can be unwanted. This can happen when 2 delimiters are adjacent.
         Array.Sort(wordsArr);
       }
       else
@@ -35,6 +40,9 @@ namespace Anagram.Models
         Array.Sort(word2);
         string joined1 = string.Join("", word1);
         string joined2 = string.Join("", word2);
+        // Activate debuggers below to see which words are being compared by the application:
+        // Console.WriteLine("joined1 = " + joined1);
+        // Console.WriteLine("joined2 = " + joined2);
         
         // Compare Two Strings Case-Insensitively
         if (string.Equals(joined1, joined2, StringComparison.OrdinalIgnoreCase))
